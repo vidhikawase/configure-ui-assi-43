@@ -1,7 +1,7 @@
 import "./BakeCards.css"
-import {  Bakeinfo ,theme , ConfigureSite} from "../../data"
+import {theme } from "../../data"
 
-function BakeCards({id , title, image , phone, website ,price ,heading ,description}) {
+function BakeCards({title, image , phone, website ,price ,heading ,description}) {
   return (
    <>
    <div className="cards-body">
@@ -11,7 +11,7 @@ function BakeCards({id , title, image , phone, website ,price ,heading ,descript
 
    <div className="card-title" style={{backgroundColor: theme.primary}}>{title}</div>
 
-   <img src= {image} className="bake-image" />
+   <img src= {image} alt="product" className="bake-image" />
 
    <p className="phone-no">Contact :-{phone}</p> 
 
